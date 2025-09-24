@@ -6,10 +6,86 @@
 }
 
 @theme inline {
+  /* Base colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  /* CV Brand Colors - Based on #3d5a80 primary */
+  --color-brand-50: #f1f4f8;
+  --color-brand-100: #e0e7f1;
+  --color-brand-200: #c5d1e4;
+  --color-brand-300: #9fb0d0;
+  --color-brand-400: #7289b8;
+  --color-brand-500: #5270a3;
+  --color-brand-600: #3d5a80;
+  --color-brand-700: #364d6f;
+  --color-brand-800: #2f425c;
+  --color-brand-900: #2a394e;
+  --color-brand-950: #1c2533;
+
+  /* CV Text Colors - Based on #293241 */
+  --color-text-50: #f6f6f7;
+  --color-text-100: #ebebed;
+  --color-text-200: #d3d4d8;
+  --color-text-300: #b0b2b9;
+  --color-text-400: #888b95;
+  --color-text-500: #6c707b;
+  --color-text-600: #5a5e67;
+  --color-text-700: #4a4d55;
+  --color-text-800: #404349;
+  --color-text-900: #293241;
+  --color-text-950: #1a1d24;
+
+  /* CV Accent - Light Blue #84DBFF */
+  --color-light-blue-50: #f0f9ff;
+  --color-light-blue-100: #e0f2fe;
+  --color-light-blue-200: #bae6fd;
+  --color-light-blue-300: #84dbff;
+  --color-light-blue-400: #38bdf8;
+  --color-light-blue-500: #0ea5e9;
+  --color-light-blue-600: #0284c7;
+  --color-light-blue-700: #0369a1;
+  --color-light-blue-800: #075985;
+  --color-light-blue-900: #0c4a6e;
+  --color-light-blue-950: #082f49;
+
+  /* CV Accent - Teal #4CDBC4 */
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-200: #99f6e4;
+  --color-teal-300: #4cdbc4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+  --color-teal-700: #0f766e;
+  --color-teal-800: #115e59;
+  --color-teal-900: #134e4a;
+  --color-teal-950: #042f2e;
+
+  /* Standard neutral colors for general use */
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+  --color-neutral-950: #030712;
+
+  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-cv: var(--font-share-tech);
+
+  /* CV-specific font sizes */
+  --font-size-cv-title: 4rem;      /* 64px */
+  --font-size-cv-position: 2.25rem; /* 36px */
+  --font-size-cv-section: 2.25rem;  /* 36px */
+  --font-size-cv-subtitle: 1.5rem;  /* 24px */
+  --font-size-cv-body: 1.25rem;     /* 20px */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +99,29 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: var(--color-brand-900);
+}
+
+/* Print styles */
+@media print {
+  @page {
+    margin: 0;
+    size: A4;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Ensure backgrounds print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 }

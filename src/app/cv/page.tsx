@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 
 export default function CV() {
@@ -9,8 +10,22 @@ export default function CV() {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* Print Button */}
-      <div className="flex justify-end max-w-[1050px] mx-auto mb-4 print:hidden">
+      {/* Navigation and Print Button */}
+      <div className="flex justify-between items-center max-w-[1050px] mx-auto mb-4 print:hidden">
+        <div className="flex gap-6">
+          <Link
+            href="/"
+            className="inline-flex items-center text-brand-600 hover:text-brand-700 font-cv text-lg"
+          >
+            ← Back Home
+          </Link>
+          <Link
+            href="/blog"
+            className="inline-flex items-center text-brand-600 hover:text-brand-700 font-cv text-lg"
+          >
+            Read My Blog
+          </Link>
+        </div>
         <Button onClick={handlePrint}>Print CV</Button>
       </div>
       {/* Sheet 1 */}
@@ -72,10 +87,10 @@ export default function CV() {
               <span>Lisbon, Portugal</span>
             </li>
             <li className="before:content-['|'] before:mx-[10px]">
-              <a href="mailto:balenko.anastasiia@gmail.com">balenko.anastasiia@gmail.com</a>
+              <a className='text-brand-900' href="mailto:balenko.anastasiia@gmail.com">balenko.anastasiia@gmail.com</a>
             </li>
             <li className="before:content-['|'] before:mx-[10px]">
-              <a href="www.linkedin.com/in/anastasiia-balenko-ab78a095">
+              <a className='text-brand-900' href="www.linkedin.com/in/anastasiia-balenko-ab78a095">
                 www.linkedin.com/in/anastasiia-balenko-ab78a095
               </a>
             </li>
@@ -175,7 +190,7 @@ export default function CV() {
             Certifications:{" "}
             <a
               href="https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=46FSB2Q1J2VEQCG7"
-              className="text-blue-600 hover:underline"
+              className="text-brand-900 hover:underline"
             >
               Amazon Web Services Developer – Associate
             </a>

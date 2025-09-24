@@ -11,6 +11,12 @@ export default function Home() {
           Frontend Developer Portfolio
         </p>
         <Link
+          href="/blog"
+          className="inline-block bg-brand-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-700 transition-colors duration-200 font-cv mr-4"
+        >
+          Read My Blog
+        </Link>
+        <Link
           href="/cv"
           className="inline-block bg-brand-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-700 transition-colors duration-200 font-cv"
         >

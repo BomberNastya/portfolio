@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export', // tells Next.js to export static HTML
+  basePath: '/portfolio', // replace with your repo name
+  assetPrefix: '/portfolio/',
 };
 
 export default nextConfig;

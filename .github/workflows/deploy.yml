@@ -20,7 +20,7 @@ jobs:
 
       # Install deps & build static export
       - run: npm ci
-      - run: npm run build && npm run export
+      - run: npm run build
 
       # Upload the exported site as artifact
       - uses: actions/upload-pages-artifact@v3

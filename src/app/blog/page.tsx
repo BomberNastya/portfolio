@@ -6,8 +6,14 @@ const BlogPage = () => {
       slug: 'nest-todo-app',
       title: 'How to Build Your First NestJS TODO App with AI Assistance',
       description: 'Learn how to create a fully functional TODO application using NestJS framework with the help of AI tools.',
-      date: '2024-12-15'
-    }
+      date: '2025-09-19'
+    },
+    {
+      slug: 'nest-todo-app/behind-the-scenes',
+      title: 'NestJS: Behind the scenes',
+      description: 'Learn how NestJS works under the hood by exploring the decorators used in a simple TODO App.',
+      date: '2025-09-25'
+    },
   ];
 
   return (

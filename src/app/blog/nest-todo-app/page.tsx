@@ -802,7 +802,7 @@ const NestTodoAppPage = () => {
                   app? Check out the companion article:
                 </p>
                 <Link
-                  href="/blog/behind-the-scenes"
+                  href="/blog/nest-todo-app/behind-the-scenes"
                   className="inline-flex items-center px-4 py-2 bg-brand-600 text-white rounded-xl shadow hover:bg-brand-700 transition font-cv text-lg"
                 >
                   🚀 Read: Behind the Scenes →

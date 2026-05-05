@@ -814,7 +814,7 @@ const NestTodoAppPage = () => {
               Demo Video
             </h2>
             <p className="text-text-700 font-cv text-lg leading-relaxed mb-4">
-              Here&apos;s the short demo of manually testing the NestJS Todo API:
+              Here&apos;s a short demo of manually testing the NestJS Todo API:
             </p>
 
             <div className="w-full max-w-2xl mx-auto mb-8">
